@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lab 68023916 Laksamon</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+/* Banner */
+.banner{
+background-image:url('https://cdn.pixabay.com/photo/2025/10/02/09/24/snail-9868046_1280.jpg');
+background-size:cover;
+background-position:center;
+height:400px;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+color:white;
+text-shadow:2px 2px 5px rgba(0,0,0,0.6);
+}
+
+.banner h1{
+font-size:3rem;
+font-weight:bold;
+}
+
+/* section spacing */
+section{
+padding:60px 0;
+}
+
+/* card hover */
+.card{
+border:none;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card-img-top{
+height:250px;
+object-fit:cover;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
+
+<a class="navbar-brand" href="#">Laksamon</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="#">หน้าแรก</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#services">บริการ</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">เกี่ยวกับเรา</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" data-bs-toggle="modal" data-bs-target="#contactModal">ติดต่อเรา</a>
+</li>
+
+</ul>
+
+</div>
+</div>
+</nav>
+
+<!-- Banner -->
+<div class="banner">
+<div>
+<h1>ยินดีต้อนรับสู่ ICT12267</h1>
+<p>เริ่มต้นการเรียนรู้เทคโนโลยีและนวัตกรรม</p>
+<a href="#services" class="btn btn-light">เริ่มต้นใช้งาน</a>
+</div>
+</div>
+
+<!-- Services -->
+<section id="services" class="container">
+
+<div class="text-center mb-5">
+<h2>บริการของเรา</h2>
+<p>เลือกบริการที่เหมาะกับคุณจากทีมงานมืออาชีพ</p>
+</div>
+
+<div class="row g-4">
+
+<!-- Card 1 -->
+<div class="col-md-4">
+
+<div class="card shadow">
+
+<img src="https://cdn.pixabay.com/photo/2025/10/05/07/11/candles-9874140_960_720.jpg" class="card-img-top">
+
+<div class="card-body text-center">
+
+<h5 class="card-title">ไกด์นำเที่ยว (Tour Guide)</h5>
+
+<p class="card-text">
+บริการนำเที่ยวในสถานที่ท่องเที่ยวชื่อดัง พร้อมคำแนะนำจากผู้เชี่ยวชาญ
+</p>
+
+<a href="#" class="btn btn-primary">ดูเพิ่มเติม</a>
+
+</div>
+</div>
+
+</div>
+
+<!-- Card 2 -->
+<div class="col-md-4">
+
+<div class="card shadow">
+
+<img src="https://cdn.pixabay.com/photo/2022/04/21/06/44/louvre-7146800_1280.jpg" class="card-img-top">
+
+<div class="card-body text-center">
+
+<h5 class="card-title">รับถ่ายภาพ (Photography Services)</h5>
+
+<p class="card-text">
+ช่างภาพมืออาชีพ พร้อมเก็บภาพความทรงจำที่สวยงาม
+</p>
+
+<a href="#" class="btn btn-primary">ดูเพิ่มเติม</a>
+
+</div>
+</div>
+
+</div>
+
+<!-- Card 3 -->
+<div class="col-md-4">
+
+<div class="card shadow">
+
+<img src="https://images.unsplash.com/photo-1496317899792-9d7dbcd928a1" class="card-img-top">
+
+<div class="card-body text-center">
+
+<h5 class="card-title">ตกแต่งรูปภาพ (Photo Editing)</h5>
+
+<p class="card-text">
+ปรับแต่งและรีทัชรูปภาพให้สวยงาม
+</p>
+
+<a href="#" class="btn btn-primary">ดูเพิ่มเติม</a>
+
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="contactModal">
+<div class="modal-dialog">
+
+<div class="modal-content">
+
+<div class="modal-header">
+<h5 class="modal-title">ติดต่อเรา</h5>
+<button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+
+<div class="modal-body">
+
+<label>เสนอหัวข้องานของคุณ</label>
+
+<textarea class="form-control" rows="4"></textarea>
+
+</div>
+
+<div class="modal-footer">
+
+<button class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+
+<button class="btn btn-primary">ส่งข้อมูล</button>
+
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-light pt-5 pb-3">
+<div class="container">
+
+<div class="row">
+
+<div class="col-md-4">
+<h5>ข้อมูลติดต่อ</h5>
+<p>📍 123 ถนนสุขุมวิท แขวงบางนา เขตบางนา กรุงเทพฯ 10220</p>
+<p>📞 โทร: 02-123-4567</p>
+<p>✉ อีเมล: info@ict122567.ac.th</p>
+</div>
+
+<div class="col-md-4">
+<h5>เมนูด่วน</h5>
+<ul class="list-unstyled">
+<li><a href="#" class="text-decoration-none text-info">หน้าหลัก</a></li>
+<li><a href="#" class="text-decoration-none text-info">เกี่ยวกับเรา</a></li>
+<li><a href="#" class="text-decoration-none text-info">บริการ</a></li>
+<li><a href="#" class="text-decoration-none text-info">ติดต่อเรา</a></li>
+</ul>
+</div>
+
+<div class="col-md-4">
+<h5>ติดตามเรา</h5>
+<a href="#" class="text-light me-3 fs-4">📘</a>
+<a href="#" class="text-light me-3 fs-4">📷</a>
+<a href="#" class="text-light fs-4">🐦</a>
+</div>
+
+</div>
+
+<hr class="border-secondary">
+
+<p class="text-center">
+© 2026 ICT12267. All rights reserved.
+</p>
+
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
